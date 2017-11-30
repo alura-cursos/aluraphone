@@ -1,0 +1,994 @@
+{
+	"name": "Aluraphonebot",
+	"created": "2017-08-22T19:28:20.703Z",
+	"intents": [{
+		"intent": "comprar",
+		"created": "2017-08-22T19:42:36.618Z",
+		"updated": "2017-08-23T19:46:49.094Z",
+		"examples": [{
+			"text": "Eu queria comprar um smartphone.",
+			"created": "2017-08-22T19:42:50.719Z",
+			"updated": "2017-08-22T20:04:30.682Z"
+		}, {
+			"text": "Quero comprar um smartphone.",
+			"created": "2017-08-22T20:16:10.159Z",
+			"updated": "2017-08-22T20:16:10.159Z"
+		}, {
+			"text": "Me ajude a comprar um smartphone.",
+			"created": "2017-08-22T20:16:02.394Z",
+			"updated": "2017-08-22T20:16:30.526Z"
+		}, {
+			"text": "Quero comprar um smartphone, mas não sei qual.",
+			"created": "2017-08-22T20:17:05.189Z",
+			"updated": "2017-08-22T20:17:05.189Z"
+		}, {
+			"text": "Não sei que smartphone posso comprar.",
+			"created": "2017-08-22T20:17:20.319Z",
+			"updated": "2017-08-22T20:17:20.319Z"
+		}],
+		"description": null
+	}, {
+		"intent": "agradecimentos",
+		"created": "2017-08-25T16:16:38.050Z",
+		"updated": "2017-08-25T16:17:20.140Z",
+		"examples": [{
+			"text": "obrigado",
+			"created": "2017-08-25T16:16:45.479Z",
+			"updated": "2017-08-25T16:16:45.479Z"
+		}, {
+			"text": "obrigada",
+			"created": "2017-08-25T16:16:48.629Z",
+			"updated": "2017-08-25T16:16:48.629Z"
+		}, {
+			"text": "valeu",
+			"created": "2017-08-25T16:16:50.237Z",
+			"updated": "2017-08-25T16:16:50.237Z"
+		}, {
+			"text": "tks",
+			"created": "2017-08-25T16:17:01.870Z",
+			"updated": "2017-08-25T16:17:01.870Z"
+		}, {
+			"text": "llw",
+			"created": "2017-08-25T16:17:20.140Z",
+			"updated": "2017-08-25T16:17:20.140Z"
+		}],
+		"description": null
+	}, {
+		"intent": "adicionar-produto",
+		"created": "2017-08-22T20:14:23.785Z",
+		"updated": "2017-08-29T14:20:47.871Z",
+		"examples": [{
+			"text": "O produto está reservado para mim quando adicionado ao carrinho?",
+			"created": "2017-08-22T20:15:13.696Z",
+			"updated": "2017-08-22T20:15:13.696Z"
+		}, {
+			"text": "Quando eu adiciono um produto no carrinho, ele já fica reservado?",
+			"created": "2017-08-22T20:15:30.833Z",
+			"updated": "2017-08-22T20:15:30.833Z"
+		}, {
+			"text": "Eu reservo um produto quando adiciono ele no carrinho?",
+			"created": "2017-08-22T20:15:43.117Z",
+			"updated": "2017-08-22T20:15:48.838Z"
+		}, {
+			"text": "Ao adicionar um produto no carrinho ele é automaticamente reservado?",
+			"created": "2017-08-28T14:08:04.017Z",
+			"updated": "2017-08-28T14:08:04.017Z"
+		}, {
+			"text": "Um produto adicionado no carrinho é uma reserva?",
+			"created": "2017-08-28T14:08:19.175Z",
+			"updated": "2017-08-28T14:08:19.175Z"
+		}, {
+			"text": "Queria saber se quando adiciono um produto ao carrinho, ele fica reservado para mim?",
+			"created": "2017-08-28T14:09:21.085Z",
+			"updated": "2017-08-28T14:09:21.085Z"
+		}],
+		"description": null
+	}, {
+		"intent": "orçamento",
+		"created": "2017-08-23T17:19:07.777Z",
+		"updated": "2017-08-23T17:19:58.292Z",
+		"examples": [{
+			"text": "Eu tenho um limite de mil reais.",
+			"created": "2017-08-23T17:19:26.067Z",
+			"updated": "2017-08-23T17:19:26.067Z"
+		}, {
+			"text": "Tenho um orçamento de R$2.000.",
+			"created": "2017-08-23T17:19:46.033Z",
+			"updated": "2017-08-23T17:19:46.033Z"
+		}, {
+			"text": "Não posso gastar mais do que 1000.",
+			"created": "2017-08-23T17:19:58.292Z",
+			"updated": "2017-08-23T17:19:58.292Z"
+		}],
+		"description": null
+	}, {
+		"intent": "entrega-de-produto",
+		"created": "2017-08-22T19:30:01.504Z",
+		"updated": "2017-08-22T19:39:26.374Z",
+		"examples": [{
+			"text": "Quanto tempo demora para o meu produto ser entregue?",
+			"created": "2017-08-22T19:30:16.562Z",
+			"updated": "2017-08-22T19:30:16.562Z"
+		}, {
+			"text": "Quantos dias vão levar para entregarem o produto?",
+			"created": "2017-08-22T19:30:44.470Z",
+			"updated": "2017-08-22T19:30:44.470Z"
+		}, {
+			"text": "Quando o produto que eu pedi vai ser entregue?",
+			"created": "2017-08-22T19:31:15.065Z",
+			"updated": "2017-08-22T19:31:15.065Z"
+		}, {
+			"text": "Qual o prazo máximo de entrega do produto?",
+			"created": "2017-08-22T19:31:43.631Z",
+			"updated": "2017-08-22T19:31:43.631Z"
+		}, {
+			"text": "Meu produto ainda não chegou. Quando ele vai ser entregue?",
+			"created": "2017-08-22T19:31:56.629Z",
+			"updated": "2017-08-22T19:31:56.629Z"
+		}, {
+			"text": "quando vou receber o tablet?",
+			"created": "2017-08-22T19:38:57.611Z",
+			"updated": "2017-08-22T19:39:26.374Z"
+		}],
+		"description": null
+	}],
+	"updated": "2017-08-31T02:13:55.576Z",
+	"entities": [{
+		"entity": "sim-não",
+		"values": [{
+			"value": "não",
+			"created": "2017-08-23T16:40:41.838Z",
+			"updated": "2017-08-23T16:40:41.838Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "sim",
+			"created": "2017-08-23T16:40:39.103Z",
+			"updated": "2017-08-23T18:33:03.901Z",
+			"metadata": null,
+			"synonyms": ["ok", "claro", "beleza", "é", "aham", "positivo"]
+		}],
+		"created": "2017-08-23T16:40:38.257Z",
+		"updated": "2017-08-23T18:33:03.901Z",
+		"metadata": null,
+		"description": null
+	}, {
+		"entity": "cidade",
+		"values": [{
+			"value": "Salvador",
+			"created": "2017-08-29T18:21:28.827Z",
+			"updated": "2017-08-29T18:21:28.827Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "Rio de Janeiro",
+			"created": "2017-08-29T18:21:15.054Z",
+			"updated": "2017-08-29T18:21:24.523Z",
+			"metadata": null,
+			"synonyms": ["rio", "rj"]
+		}, {
+			"value": "São Paulo",
+			"created": "2017-08-29T18:20:58.678Z",
+			"updated": "2017-08-29T18:21:09.715Z",
+			"metadata": null,
+			"synonyms": ["sp", "sampa", "cidade da garoa"]
+		}],
+		"created": "2017-08-29T18:20:51.667Z",
+		"updated": "2017-08-29T20:13:55.441Z",
+		"metadata": null,
+		"description": null,
+		"fuzzy_match": false
+	}, {
+		"entity": "produto",
+		"values": [{
+			"value": "smartphone",
+			"created": "2017-08-22T19:34:04.097Z",
+			"updated": "2017-08-23T20:44:45.208Z",
+			"metadata": null,
+			"synonyms": ["celular", "cel", "telefone celular", "iphone", "windowsphone"]
+		}, {
+			"value": "tablet",
+			"created": "2017-08-22T19:34:37.949Z",
+			"updated": "2017-08-23T16:36:12.669Z",
+			"metadata": null,
+			"synonyms": ["ipad"]
+		}, {
+			"value": "smartwatch",
+			"created": "2017-08-22T19:34:55.476Z",
+			"updated": "2017-08-22T19:35:01.656Z",
+			"metadata": null,
+			"synonyms": ["relógio inteligente"]
+		}],
+		"created": "2017-08-22T19:32:40.181Z",
+		"updated": "2017-08-23T20:44:45.208Z",
+		"metadata": null,
+		"description": null,
+		"fuzzy_match": false
+	}, {
+		"entity": "sys-currency",
+		"values": [],
+		"created": "2017-08-23T18:47:55.465Z",
+		"updated": "2017-08-23T18:47:55.465Z",
+		"metadata": null,
+		"description": null
+	}, {
+		"entity": "marca",
+		"values": [{
+			"value": "asus",
+			"created": "2017-08-23T16:40:10.063Z",
+			"updated": "2017-08-23T16:40:10.063Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "blackberry",
+			"created": "2017-08-23T20:54:52.501Z",
+			"updated": "2017-08-23T20:54:52.501Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "motorola",
+			"created": "2017-08-23T16:40:02.602Z",
+			"updated": "2017-08-23T16:40:02.602Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "sony",
+			"created": "2017-08-23T20:42:45.089Z",
+			"updated": "2017-08-23T20:42:45.089Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "nokia",
+			"created": "2017-08-23T20:42:48.861Z",
+			"updated": "2017-08-23T20:42:48.861Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "samsung",
+			"created": "2017-08-23T16:39:49.146Z",
+			"updated": "2017-08-23T16:39:51.047Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "microsoft",
+			"created": "2017-08-23T20:44:04.051Z",
+			"updated": "2017-08-23T20:44:04.051Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "apple",
+			"created": "2017-08-23T16:39:57.979Z",
+			"updated": "2017-08-25T16:11:41.714Z",
+			"metadata": null,
+			"synonyms": ["iphone"]
+		}, {
+			"value": "lg",
+			"created": "2017-08-23T20:42:40.996Z",
+			"updated": "2017-08-23T20:42:40.996Z",
+			"metadata": null,
+			"synonyms": []
+		}],
+		"created": "2017-08-23T16:39:44.527Z",
+		"updated": "2017-08-25T16:11:41.714Z",
+		"metadata": null,
+		"description": null
+	}, {
+		"entity": "so",
+		"values": [{
+			"value": "ios",
+			"created": "2017-08-22T19:47:43.883Z",
+			"updated": "2017-08-22T19:47:43.883Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "blackberry",
+			"created": "2017-08-23T20:54:25.756Z",
+			"updated": "2017-08-23T20:54:25.756Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "android",
+			"created": "2017-08-22T19:47:34.961Z",
+			"updated": "2017-08-22T19:47:39.286Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "nokia series",
+			"created": "2017-08-23T20:46:21.733Z",
+			"updated": "2017-08-23T20:46:21.733Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "windows",
+			"created": "2017-08-23T20:44:18.996Z",
+			"updated": "2017-08-23T20:44:18.996Z",
+			"metadata": null,
+			"synonyms": []
+		}, {
+			"value": "lg web os",
+			"created": "2017-08-23T20:47:42.827Z",
+			"updated": "2017-08-23T20:47:42.827Z",
+			"metadata": null,
+			"synonyms": []
+		}],
+		"created": "2017-08-22T19:47:26.964Z",
+		"updated": "2017-08-23T20:54:25.756Z",
+		"metadata": null,
+		"description": null
+	}],
+	"language": "pt-br",
+	"metadata": {
+		"api_version": {
+			"major_version": "v1",
+			"minor_version": "2017-05-26"
+		}
+	},
+	"description": "Chatbot para o ecommerce da Aluraphone",
+	"dialog_nodes": [{
+		"title": "São Paulo",
+		"output": {},
+		"parent": "Prazo da entrega de produto",
+		"context": null,
+		"created": "2017-08-24T05:57:40.730Z",
+		"updated": "2017-08-29T18:23:51.833Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@cidade:(São Paulo)",
+		"description": null,
+		"dialog_node": "São Paulo",
+		"previous_sibling": "Rio de Janeiro"
+	}, {
+		"title": "Salvador",
+		"output": {
+			"text": {
+				"values": ["Em até 20 dias úteis, você terá o seu produto em casa."],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Prazo da entrega de produto",
+		"context": null,
+		"created": "2017-08-24T06:08:09.066Z",
+		"updated": "2017-08-29T18:24:26.039Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@cidade:Salvador || @cidade:(Rio de Janeiro)",
+		"description": null,
+		"dialog_node": "Salvador",
+		"previous_sibling": "São Paulo"
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["Em  qual cidade você está?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Prazo da entrega de produto",
+		"context": null,
+		"created": "2017-08-29T18:25:01.745Z",
+		"updated": "2017-08-29T18:26:06.592Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"description": null,
+		"dialog_node": "node_6_1504031101376",
+		"previous_sibling": "Salvador"
+	}, {
+		"title": "Rio de Janeiro",
+		"output": {
+			"text": {
+				"values": ["Em até 20 dias úteis, você terá o seu produto em casa."],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Prazo da entrega de produto",
+		"context": null,
+		"created": "2017-08-24T06:06:04.212Z",
+		"updated": "2017-08-29T18:24:05.072Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@cidade:(Rio de Janeiro)",
+		"description": null,
+		"dialog_node": "Rio de Janeiro",
+		"previous_sibling": null
+	}, {
+		"type": "event_handler",
+		"title": "handler_44_1503542159380",
+		"output": {},
+		"parent": "Compra de produto com slots",
+		"context": null,
+		"created": "2017-08-24T02:36:01.539Z",
+		"updated": "2017-08-24T03:12:49.738Z",
+		"disabled": true,
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"event_name": "focus",
+		"description": null,
+		"dialog_node": "handler_44_1503542159380",
+		"previous_sibling": "slot_46_1503544682901"
+	}, {
+		"type": "slot",
+		"title": "slot_46_1503544682901",
+		"output": {},
+		"parent": "Compra de produto com slots",
+		"context": null,
+		"created": "2017-08-24T03:18:03.319Z",
+		"updated": "2017-08-24T04:25:51.511Z",
+		"metadata": null,
+		"variable": "$valor",
+		"next_step": null,
+		"conditions": null,
+		"description": null,
+		"dialog_node": "slot_46_1503544682901",
+		"previous_sibling": "slot_24_1503517901828"
+	}, {
+		"type": "slot",
+		"title": "slot_53_1503545289222",
+		"output": {},
+		"parent": "Compra de produto com slots",
+		"context": null,
+		"created": "2017-08-24T03:28:09.639Z",
+		"updated": "2017-08-24T03:48:24.387Z",
+		"metadata": null,
+		"variable": "$produto",
+		"next_step": null,
+		"conditions": null,
+		"description": null,
+		"dialog_node": "slot_53_1503545289222",
+		"previous_sibling": "node_2_1503549185916"
+	}, {
+		"type": "slot",
+		"title": "slot_24_1503517901828",
+		"output": {},
+		"parent": "Compra de produto com slots",
+		"context": null,
+		"created": "2017-08-23T19:51:42.639Z",
+		"updated": "2017-08-24T03:56:10.362Z",
+		"metadata": null,
+		"variable": "$marca",
+		"next_step": null,
+		"conditions": null,
+		"description": null,
+		"dialog_node": "slot_24_1503517901828",
+		"previous_sibling": "slot_62_1503546857999"
+	}, {
+		"type": "slot",
+		"title": "slot_62_1503546857999",
+		"output": {},
+		"parent": "Compra de produto com slots",
+		"context": null,
+		"created": "2017-08-24T03:54:18.612Z",
+		"updated": "2017-08-24T04:59:40.271Z",
+		"metadata": null,
+		"variable": "sn",
+		"next_step": null,
+		"conditions": null,
+		"description": null,
+		"dialog_node": "slot_62_1503546857999",
+		"previous_sibling": "slot_53_1503545289222"
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["Ótimo! Tenho um $produto da $marca por até $valor reais para te indicar. Gostaria de adicioná-lo ao carrinho?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Compra de produto com slots",
+		"context": null,
+		"created": "2017-08-24T04:33:06.495Z",
+		"updated": "2017-08-24T05:02:03.926Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "",
+		"description": null,
+		"dialog_node": "node_2_1503549185916",
+		"previous_sibling": null
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["O produto será entregue em até 15 dias úteis."],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "São Paulo",
+		"context": null,
+		"created": "2017-08-24T05:58:19.392Z",
+		"updated": "2017-08-29T05:13:23.207Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "",
+		"description": null,
+		"dialog_node": "node_3_1503554299014",
+		"previous_sibling": null
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["O $produto foi adicionado ao seu carrinho."],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Adicionar ao carrinho com slots",
+		"context": null,
+		"created": "2017-08-24T04:28:46.966Z",
+		"updated": "2017-08-24T04:48:05.805Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "",
+		"description": null,
+		"dialog_node": "node_1_1503548926510",
+		"previous_sibling": null
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["Legal, vou te ajudar. Irei fazer algumas perguntas para selecionar o melhor @produto para você, ok?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Compra de produto",
+		"context": null,
+		"created": "2017-08-23T14:57:57.810Z",
+		"updated": "2017-08-24T03:39:45.428Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"description": null,
+		"dialog_node": "node_5_1503500277438",
+		"previous_sibling": "Escolha do cliente"
+	}, {
+		"title": "Escolha do cliente",
+		"output": {},
+		"parent": "Compra de produto",
+		"context": null,
+		"created": "2017-08-23T17:04:27.377Z",
+		"updated": "2017-08-23T17:15:05.089Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@sim-não",
+		"description": null,
+		"dialog_node": "Escolha do cliente",
+		"previous_sibling": null
+	}, {
+		"type": "event_handler",
+		"title": "handler_47_1503544682901",
+		"output": {},
+		"parent": "slot_46_1503544682901",
+		"context": {
+			"valor": "@sys-currency"
+		},
+		"created": "2017-08-24T03:18:03.854Z",
+		"updated": "2017-08-24T04:25:54.322Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@sys-currency",
+		"event_name": "input",
+		"description": null,
+		"dialog_node": "handler_47_1503544682901",
+		"previous_sibling": "handler_48_1503544682901"
+	}, {
+		"type": "event_handler",
+		"title": "handler_48_1503544682901",
+		"output": {
+			"text": "E você tem algum valor máximo para comprar o $produto da $marca?"
+		},
+		"parent": "slot_46_1503544682901",
+		"context": null,
+		"created": "2017-08-24T03:18:04.564Z",
+		"updated": "2017-08-24T05:01:02.667Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"event_name": "focus",
+		"description": null,
+		"dialog_node": "handler_48_1503544682901",
+		"previous_sibling": null
+	}, {
+		"title": "Definição da marca",
+		"output": {},
+		"parent": "Escolha do cliente",
+		"context": null,
+		"created": "2017-08-22T20:07:12.284Z",
+		"updated": "2017-08-24T04:55:38.193Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@marca || anything_else",
+		"description": null,
+		"dialog_node": "Definição da marca",
+		"previous_sibling": "node_9_1503508514434"
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["Sem problemas, posso ajudar com mais alguma coisa?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Escolha do cliente",
+		"context": null,
+		"created": "2017-08-23T17:15:14.685Z",
+		"updated": "2017-08-24T04:55:04.577Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": " @sim-não:não",
+		"description": null,
+		"dialog_node": "node_9_1503508514434",
+		"previous_sibling": "node_8_1503508499148"
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["Você tem preferência por alguma marca?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Escolha do cliente",
+		"context": null,
+		"created": "2017-08-23T17:14:59.522Z",
+		"updated": "2017-08-24T04:54:13.765Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@sim-não:sim",
+		"description": null,
+		"dialog_node": "node_8_1503508499148",
+		"previous_sibling": null
+	}, {
+		"type": "event_handler",
+		"title": "handler_43_1503541994293",
+		"output": {
+			"text": {
+				"values": [],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "slot_24_1503517901828",
+		"context": null,
+		"created": "2017-08-24T02:33:30.593Z",
+		"updated": "2017-08-24T03:16:49.880Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"event_name": "filled",
+		"description": null,
+		"dialog_node": "handler_43_1503541994293",
+		"previous_sibling": "handler_25_1503517901828"
+	}, {
+		"type": "event_handler",
+		"title": "handler_25_1503517901828",
+		"output": {},
+		"parent": "slot_24_1503517901828",
+		"context": {
+			"marca": "@marca"
+		},
+		"created": "2017-08-23T19:51:43.095Z",
+		"updated": "2017-08-24T03:16:49.403Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@marca",
+		"event_name": "input",
+		"description": null,
+		"dialog_node": "handler_25_1503517901828",
+		"previous_sibling": "handler_26_1503517901828"
+	}, {
+		"type": "event_handler",
+		"title": "handler_26_1503517901828",
+		"output": {
+			"text": "Você tem preferência por alguma marca de $produto?"
+		},
+		"parent": "slot_24_1503517901828",
+		"context": null,
+		"created": "2017-08-23T19:51:43.504Z",
+		"updated": "2017-08-24T04:53:24.675Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"event_name": "focus",
+		"description": null,
+		"dialog_node": "handler_26_1503517901828",
+		"previous_sibling": null
+	}, {
+		"type": "event_handler",
+		"title": "handler_4_1503550559908",
+		"output": {
+			"text": {
+				"values": [],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "slot_62_1503546857999",
+		"context": null,
+		"created": "2017-08-24T04:56:40.208Z",
+		"updated": "2017-08-24T04:59:41.821Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "",
+		"event_name": "filled",
+		"description": null,
+		"dialog_node": "handler_4_1503550559908",
+		"previous_sibling": "handler_63_1503546857999"
+	}, {
+		"type": "event_handler",
+		"title": "handler_63_1503546857999",
+		"output": {},
+		"parent": "slot_62_1503546857999",
+		"context": {
+			"sn": "@sim-não"
+		},
+		"created": "2017-08-24T03:54:19.157Z",
+		"updated": "2017-08-24T04:59:41.386Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@sim-não",
+		"event_name": "input",
+		"description": null,
+		"dialog_node": "handler_63_1503546857999",
+		"previous_sibling": "handler_64_1503546857999"
+	}, {
+		"type": "event_handler",
+		"title": "handler_64_1503546857999",
+		"output": {
+			"text": "Legal, vou te ajudar. Irei fazer algumas perguntas para selecionar o melhor $produto para você, ok?"
+		},
+		"parent": "slot_62_1503546857999",
+		"context": null,
+		"created": "2017-08-24T03:54:19.821Z",
+		"updated": "2017-08-24T04:59:40.940Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"event_name": "focus",
+		"description": null,
+		"dialog_node": "handler_64_1503546857999",
+		"previous_sibling": null
+	}, {
+		"type": "response_condition",
+		"title": null,
+		"output": {
+			"text": {
+				"values": ["E você tem algum valor máximo para comprar o produto da @marca?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Definição da marca",
+		"context": null,
+		"created": "2017-08-23T17:16:31.114Z",
+		"updated": "2017-08-24T05:34:35.700Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "",
+		"description": null,
+		"dialog_node": "node_10_1503508590698",
+		"previous_sibling": "Indicação do bot"
+	}, {
+		"title": "Indicação do bot",
+		"output": {
+			"text": {
+				"values": ["Ótimo! Tenho um produto por até @sys-currency reais para te indicar. Gostaria de adicioná-lo ao carrinho?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": "Definição da marca",
+		"context": null,
+		"created": "2017-08-22T20:08:48.321Z",
+		"updated": "2017-08-24T05:10:35.117Z",
+		"metadata": null,
+		"next_step": {
+			"behavior": "jump_to",
+			"selector": "user_input",
+			"dialog_node": "Adicionar ao carrinho"
+		},
+		"conditions": "@sys-currency",
+		"description": null,
+		"dialog_node": "Indicação do bot",
+		"previous_sibling": null
+	}, {
+		"type": "event_handler",
+		"title": "handler_55_1503545289222",
+		"output": {},
+		"parent": "slot_53_1503545289222",
+		"context": null,
+		"created": "2017-08-24T03:28:11.054Z",
+		"updated": "2017-08-24T03:28:11.054Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": null,
+		"event_name": "focus",
+		"description": null,
+		"dialog_node": "handler_55_1503545289222",
+		"previous_sibling": "handler_54_1503545289222"
+	}, {
+		"type": "event_handler",
+		"title": "handler_54_1503545289222",
+		"output": null,
+		"parent": "slot_53_1503545289222",
+		"context": {
+			"produto": "@produto"
+		},
+		"created": "2017-08-24T03:28:10.294Z",
+		"updated": "2017-08-24T03:28:20.690Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@produto",
+		"event_name": "input",
+		"description": null,
+		"dialog_node": "handler_54_1503545289222",
+		"previous_sibling": null
+	}, {
+		"title": "Reservas no carrinho",
+		"output": {
+			"text": {
+				"values": ["Não. O produto só é reservado após a finalização do pedido.", "Só quando o pedido é finalizado que reservamos o produto.", "Apenas após a finalização do pedido é que reservamos o seu produto."],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-22T20:13:34.469Z",
+		"updated": "2017-08-29T14:21:21.326Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "#adicionar-produto",
+		"description": null,
+		"dialog_node": "Reservas no carrinho",
+		"previous_sibling": "Prazo da entrega de produto"
+	}, {
+		"type": "frame",
+		"title": "Compra de produto com slots",
+		"output": {},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-23T14:40:17.227Z",
+		"updated": "2017-08-24T05:40:20.949Z",
+		"metadata": null,
+		"next_step": {
+			"behavior": "jump_to",
+			"selector": "user_input",
+			"dialog_node": "Adicionar ao carrinho com slots"
+		},
+		"conditions": "#comprar",
+		"description": null,
+		"dialog_node": "Compra de produto com slots",
+		"previous_sibling": "Bem-vindo"
+	}, {
+		"title": "Compra de produto",
+		"output": {},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-22T20:04:39.704Z",
+		"updated": "2017-08-24T05:03:06.699Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "#comprar",
+		"description": null,
+		"dialog_node": "Compra de produto",
+		"previous_sibling": "Compra de produto com slots"
+	}, {
+		"title": "Prazo de entrega de produto com cidade",
+		"output": {},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-29T18:20:07.500Z",
+		"updated": "2017-08-31T02:13:55.576Z",
+		"metadata": null,
+		"next_step": {
+			"behavior": "jump_to",
+			"selector": "condition",
+			"dialog_node": "Rio de Janeiro"
+		},
+		"conditions": "#entrega-de-produto && @cidade",
+		"description": null,
+		"dialog_node": "node_3_1504030807174",
+		"previous_sibling": "Adicionar ao carrinho"
+	}, {
+		"title": "Adicionar ao carrinho",
+		"output": {
+			"text": {
+				"values": ["O produto foi adicionado ao seu carrinho."],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-24T05:06:28.049Z",
+		"updated": "2017-08-24T05:07:05.968Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@sim-não:sim",
+		"description": null,
+		"dialog_node": "Adicionar ao carrinho",
+		"previous_sibling": "Adicionar ao carrinho com slots"
+	}, {
+		"title": "Adicionar ao carrinho com slots",
+		"output": {},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-23T14:40:31.940Z",
+		"updated": "2017-08-25T16:28:27.636Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "@sim-não:sim",
+		"description": null,
+		"dialog_node": "Adicionar ao carrinho com slots",
+		"previous_sibling": "Compra de produto"
+	}, {
+		"title": "Em outros casos",
+		"output": {
+			"text": {
+				"values": ["Eu não entendi. Você pode tentar reformular a frase.", "Você pode reformular sua afirmação? Eu não estou entendendo.", "Eu não entendi o sentido."],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-22T19:35:13.826Z",
+		"updated": "2017-08-23T17:28:18.868Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "anything_else",
+		"description": null,
+		"dialog_node": "Em outros casos",
+		"previous_sibling": "Agradecimento"
+	}, {
+		"title": "Prazo da entrega de produto",
+		"output": {},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-22T19:35:37.129Z",
+		"updated": "2017-08-29T18:26:02.420Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "#entrega-de-produto",
+		"description": null,
+		"dialog_node": "Prazo da entrega de produto",
+		"previous_sibling": "node_3_1504030807174"
+	}, {
+		"title": "Agradecimento",
+		"output": {
+			"text": {
+				"values": ["De nada :p .", "Imagine!"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-25T16:20:52.477Z",
+		"updated": "2017-08-25T16:21:38.641Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "#agradecimentos",
+		"description": null,
+		"dialog_node": "Agradecimento",
+		"previous_sibling": "Reservas no carrinho"
+	}, {
+		"title": "Bem-vindo",
+		"output": {
+			"text": {
+				"values": ["Olá. Como posso te ajudar?", "Bem vindo ao Aluraphonebot! Como posso ajudar?"],
+				"selection_policy": "sequential"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"created": "2017-08-22T19:35:13.826Z",
+		"updated": "2017-08-29T16:56:44.699Z",
+		"metadata": null,
+		"next_step": null,
+		"conditions": "welcome",
+		"description": null,
+		"dialog_node": "Bem-vindo",
+		"previous_sibling": null
+	}],
+	"workspace_id": "621bb983-f868-4061-85dd-2d14df8cbdfc",
+	"counterexamples": [],
+	"learning_opt_out": false
+}
